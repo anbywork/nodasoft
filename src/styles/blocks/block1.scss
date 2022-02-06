@@ -1,0 +1,33 @@
+.block1 {
+  display: grid;
+  grid-template-columns: 390px 590px 160px;
+  grid-gap: 15px;
+  list-style-type: none;
+  margin: 0 0 15px;
+  padding: 0;
+  background-color: #B3F95A;
+  counter-reset: block1-counter;
+}
+
+.block1__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 198px;
+  font-size: 53px;
+  line-height: 62px;
+  color: #fff;
+  background-color: #8AD191;
+  
+  &::after {
+    counter-increment: block1-counter;
+    content: counter(block1-counter);
+  }
+  
+  &:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+

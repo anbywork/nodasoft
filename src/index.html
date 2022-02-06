@@ -3,6 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>NodaSoft task</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preload" href="/styles/main.min.css" as="style">
+  <link rel="stylesheet" href="/styles/main.min.css">
+  
 </head>
 <body>
   <div class="page-wrapper">
@@ -24,9 +33,14 @@
         <li class="block2__item"></li>
       </ul>
     </main>
+    <footer class="page-footer"></footer>
     <div id="popup" class="popup">
       <div class="popup__wrapper">
-        <a href="#close-popup" class="popup__close-btn">X</a>
+        <a href="#close-popup" class="popup__close-btn" aria-label="Close popup">
+          <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.08203 0.390625L6.5 5.83984L9.91797 0.390625H12.1152L7.62305 7.43164L12.2227 14.6094H10.0059L6.5 9.05273L2.99414 14.6094H0.777344L5.37695 7.43164L0.884766 0.390625H3.08203Z" fill="white"/>
+          </svg>
+        </a>
         <h3 class="popup__title">Pop-up</h3>
       </div>
       <a href="#close-bg" class="popup__bg"></a>

@@ -1,0 +1,16 @@
+.block2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  margin: 0 0 15px;
+  height: 259px;
+  padding: 30px;
+  list-style-type: none;
+  background-color: #88B5BF;
+}
+
+.block2__item {
+  height: 100%;
+  background-color: #0D89B0;
+}
