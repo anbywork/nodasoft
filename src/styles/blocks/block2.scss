@@ -1,16 +1,29 @@
+$aspect-ratio: 78%;
+
 .block2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 30px;
+  //display: flex;
   margin: 0 0 15px;
-  height: 259px;
   padding: 30px;
   list-style-type: none;
   background-color: #88B5BF;
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
 }
 
 .block2__item {
-  height: 100%;
+  position: relative;
+  width: calc((100% - 30px * 3) / 4);
+  float: left;
   background-color: #0D89B0;
+  &::before {
+    content: "";
+    display: block;
+    margin-top: $aspect-ratio;
+  }
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
